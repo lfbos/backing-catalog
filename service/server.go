@@ -16,7 +16,7 @@ func NewServerFromCFEnv(appEnv *cfenv.App) *negroni.Negroni {
 		rootURL: "http://localhost:3001/skus",
 	}
 
-	val, err := cftools.GetVCAPServiceProperty("backing-fulfill", "url", appEnv)
+	val, err := cftools.GetVCAPServiceProperty("lfbos-backing-fulfillment", "url", appEnv)
 	if err == nil {
 		webClient.rootURL = val
 	} else {
