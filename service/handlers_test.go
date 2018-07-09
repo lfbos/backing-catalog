@@ -28,7 +28,7 @@ func TestGetDetailsForCatalogItemReturnsProperData(t *testing.T) {
 	targetSKU := "THINGAMAJIG12"
 
 	recorder = httptest.NewRecorder()
-	request, _ = http.NewRequest("GET", "/catalog/"+targetSKU, nil)
+	request, _ = http.NewRequest("GET", "/catalog/"+targetSKU+"/", nil)
 	server.ServeHTTP(recorder, request)
 
 	var detail catalogItem
