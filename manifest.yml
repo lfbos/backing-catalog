@@ -4,3 +4,5 @@ applications:
   instances: 1
   name: lfbos-backing-catalog
   disk_quota: 1024M
+  services:
+    - lfbos-backing-fulfillment
