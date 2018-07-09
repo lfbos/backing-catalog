@@ -63,5 +63,5 @@ cloud-deploy:
        password: $PASSWORD
        org: $ORG
        space: $SPACE
-       appname: backing-catalog
+       appname: lfbos-backing-catalog
        docker_image: lfbos19/backing-catalog
